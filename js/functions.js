@@ -14,7 +14,11 @@ $(document).ready(function(){
     focusOnSelect: false,
   });
 
-  var $slider = $('#pic').slick({
+  $slider.find(".slick-slide").on("click", function(){
+     $slider.slick("slickNext");
+   });
+
+  var $slider2 = $('.pic').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 0,
@@ -26,8 +30,8 @@ $(document).ready(function(){
     // lazyLoad: 'progressive',
   });
 
-  $slider.find(".slick-slide").on("click", function(){
-     $slider.slick("slickNext");
+  $slider2.find(".slick-slide").on("click", function(){
+     $slider2.slick("slickNext");
    });
 
 // GRID GRID GRID

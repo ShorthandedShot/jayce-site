@@ -413,7 +413,7 @@ hr {
 }
 
 .grid .box video {
-  /* margin-bottom: 2.5rem; */
+  object-fit: cover;
 }
 
 .grid .box-sizer2 {
@@ -581,7 +581,7 @@ hr {
   }
 
   .project .gallery {
-    grid-gap:2rem;
+    grid-gap:1rem;
   }
 
   .gallery .box {
