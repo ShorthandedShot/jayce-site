@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>posters only | jayce nguyen</title>
+    <link rel="icon" type="image/png" href="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+  </head>
+
+  <body>
+
+
+    <!-- HEADER + FOOTER -->
+    <div class="header">
+      <div class="link">
+        <h2 style="font-weight: normal;"><a href="../work.html">work</a></h2>
+      </div>
+
+      <!-- <div class="link">
+        <h2><a href="../index.html">jayce nguyen</a></h2>
+      </div> -->
+
+      <div class="link">
+        <h2><a href="../contact.html">contact</a></h2>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="link">
+        <h2><a href="../index.html"><span id="code"></span></a></h2>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="work">
+
+      <div class="project">
+        <div class="titledate">
+          <div class="title">
+            <h3>✴ Posters Only</h3>
+          </div>
+          <div>
+            <h3>Fall 2021</h3>
+          </div>
+        </div>
+
+        <div class="desc">
+          <p>a variety of commissioned posters created during posters only, a semester long class dedicated to making posters, both for digital and for print.</p>
+          <br>
+          <p>in use: illustrator, photoshop, after effects, risograph</p>
+          </div>
+
+        <div><hr></div>
+
+        <div class="grid">
+          <div class="box-sizer2" id="hidden"></div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/po/po-02-v1.png"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/po/po-07.jpg"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/po/po-06-v1.gif"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/po/po-02-v2.png"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/po/po-05.jpg"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/po/po-03.png"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/po/po-01.jpg"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/po/po-04.jpg"
+              class="lazyload" />
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript" src="../js/masonry.pkgd.min.js" async=""></script>
+    <script type="text/javascript" src="../js/lazysizes.min.js" async=""></script>
+    <script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script>
+    $(document).ready(function(){
+      var $grid = $('.grid').masonry({
+        itemSelector: '.box',
+        columnWidth: '.box-sizer2',
+        gutter: 32,
+        // horizontalOrder: true,
+        isFitWidth: true,
+        transitionDuration: '0.2s'
+      });
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+      });
+    });
+    </script>
+
+
+  </body>
+
+</html>

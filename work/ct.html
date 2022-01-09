@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>the ct | jayce nguyen</title>
+    <link rel="icon" type="image/png" href="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+  </head>
+
+  <body>
+
+
+    <!-- HEADER + FOOTER -->
+    <div class="header">
+      <div class="link">
+        <h2 style="font-weight: normal;"><a href="../work.html">work</a></h2>
+      </div>
+
+      <!-- <div class="link">
+        <h2><a href="../index.html">jayce nguyen</a></h2>
+      </div> -->
+
+      <div class="link">
+        <h2><a href="../contact.html">contact</a></h2>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="link">
+        <h2><a href="../index.html"><span id="code"></span></a></h2>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="work">
+
+      <div class="project">
+        <div class="titledate">
+          <div class="title">
+            <h3>✴ The Commonwealth Times</h3>
+          </div>
+          <div>
+            <h3>2020 - 2022</h3>
+          </div>
+        </div>
+
+        <div class="desc">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt, tellus ac ultricies facilisis, ex mauris suscipit massa, id rutrum diam mi pharetra augue. Nulla facilisi. Nunc accumsan laoreet ligula ut scelerisque. Etiam non aliquam risus. Sed rhoncus ultrices ligula a maximus.</p>
+          <br>
+          <p>in use: </p>
+          </div>
+
+        <div><hr></div>
+
+        <div class="grid">
+          <div class="box-sizer2" id="hidden"></div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/ct/frontpage-01.jpg"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width1">
+            <img
+              data-src="../img/ct/frontpage-01.jpg"
+              class="lazyload" />
+          </div>
+
+          <div class="box box-width-full">
+            <img
+              data-src="../img/ct/frontpage-01.jpg"
+              class="lazyload" />
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript" src="../js/masonry.pkgd.min.js" async=""></script>
+    <script type="text/javascript" src="../js/lazysizes.min.js" async=""></script>
+    <script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
+    <script>
+    $(document).ready(function(){
+      var $grid = $('.grid').masonry({
+        itemSelector: '.box',
+        columnWidth: '.box-sizer2',
+        gutter: 32,
+        // horizontalOrder: true,
+        isFitWidth: true,
+      });
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+      });
+    });
+    </script>
+
+
+  </body>
+
+</html>
