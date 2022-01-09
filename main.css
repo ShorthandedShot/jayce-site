@@ -121,6 +121,7 @@ hr {
   justify-content: space-between;
   align-content: center;
   overflow: hidden;
+  z-index: 5;
 }
 
 .header {
@@ -136,13 +137,10 @@ hr {
   position: fixed;
   bottom: 0;
   height: 70px;
-  /* height:auto; */
-  /* padding: 10px; */
   padding: 1rem;
   background: black;
   /* background: red; */
   justify-content: center;
-  z-index: 10;
 }
 
 .footer a:hover {
