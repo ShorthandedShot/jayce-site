@@ -11,31 +11,35 @@ $(document).ready(function(){
     prevArrow: false,
     nextArrow: false,
     // lazyLoad: 'progressive',
-    focusOnSelect: true,
-    // adaptiveHeight: true,
+    focusOnSelect: false,
   });
 
-$slider.find(".slick-slide").on("click", function(){
-   $slider.slick("slickNext");
- });
-});
+  $slider.find(".slick-slide").on("click", function(){
+     $slider.slick("slickNext");
+   });
 
-$(document).ready(function(){
-  var $slider = $('.pic').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    speed: 0,
-    cssEase: 'linear',
-    fade: true,
-    infinite: true,
-    prevArrow: false,
-    nextArrow: false,
-    lazyLoad: 'progressive',
-    adaptiveHeight: true,
+// GRID GRID GRID
+   var $grid = $('.grid').masonry({
+     itemSelector: '.box',
+     columnWidth: '.box-sizer2',
+     gutter: 32,
+     // horizontalOrder: true,
+     isFitWidth: true,
+     transitionDuration: '0.2s'
+   });
+   // layout Masonry after each image loads
+   $grid.imagesLoaded().progress( function() {
+     $grid.masonry('layout');
+   });
+
+  // LIGHTBOX LIGHTBOX
+  $('.grid').magnificPopup({
+    delegate: 'a',
+    type:'image',
+    gallery: {
+      enabled: true
+    }
 
   });
 
-$slider.find(".slick-slide").on("click", function(){
-   $slider.slick("slickNext");
- });
 });

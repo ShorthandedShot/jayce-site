@@ -5,9 +5,9 @@
     <link rel="icon" type="image/png" href="">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css">
   </head>
 
   <body>
@@ -59,15 +59,19 @@
           <div class="box-sizer2" id="hidden"></div>
 
           <div class="box box-width1">
-            <img
-              data-src="../img/po/po-02-v1.png"
-              class="lazyload" />
+            <a href="../img/po/po-02-v1.png">
+              <img
+                data-src="../img/po/po-02-v1.png"
+                class="lazyload" />
+            </a>
           </div>
 
           <div class="box box-width1">
-            <img
-              data-src="../img/po/po-07.jpg"
-              class="lazyload" />
+            <a href="../img/po/po-07.jpg">
+              <img
+                data-src="../img/po/po-07.jpg"
+                class="lazyload" />
+            </a>
           </div>
 
           <div class="box box-width1">
@@ -119,23 +123,8 @@
     <script type="text/javascript" src="../js/masonry.pkgd.min.js" async=""></script>
     <script type="text/javascript" src="../js/lazysizes.min.js" async=""></script>
     <script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"></script>
-    <script>
-    $(document).ready(function(){
-      var $grid = $('.grid').masonry({
-        itemSelector: '.box',
-        columnWidth: '.box-sizer2',
-        gutter: 32,
-        // horizontalOrder: true,
-        isFitWidth: true,
-        transitionDuration: '0.2s'
-      });
-      // layout Masonry after each image loads
-      $grid.imagesLoaded().progress( function() {
-        $grid.masonry('layout');
-      });
-    });
-    </script>
 
 
   </body>
