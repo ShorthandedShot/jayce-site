@@ -394,6 +394,7 @@ hr {
   /* background: teal; */
   margin: 0 auto;
   width: 100%;
+  height: fit-content;
 
 }
 
@@ -408,6 +409,7 @@ hr {
   height: fit-content;
   /* outline: 2px dotted white; */
   margin-bottom: 2.5rem;
+  z-index: 10;
 }
 
 .grid .box img {
