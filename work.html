@@ -150,11 +150,11 @@
       </div>
 
       <!-- PROJECT HERE - more than just fiction -->
-      <div class="project" style="background: coral;">
+      <div class="project">
 
           <div class="titledate">
             <div class="title">
-              <h3>✶ <a href="work/po.html">More Than Just Fiction</a></h3>
+              <h3>✶ <a href="work/more-than-just-fiction.html">More Than Just Fiction</a></h3>
             </div>
             <div>
               <h3>2020</h3>
@@ -163,19 +163,21 @@
 
           <div class="gallery">
             <div class="box-sizer3" id="hidden"></div>
-            <div class="box mini-slideshow">
-              <img
-                data-src="img/po/po-06-v1.gif"
-                src="img/po/po-06-v1.gif"
-                class="lazyload"
-                />
 
+            <!-- <div class="box"> -->
+            <div class="minislideshow">
+              <img data-src="img/morethanjustfiction/02.jpg" class="lazyload" />
+              <img data-src="img/morethanjustfiction/03.jpg" class="lazyload" />
+              <img data-src="img/morethanjustfiction/04.jpg" class="lazyload" />
+              <img data-src="img/morethanjustfiction/06.jpg" class="lazyload" />
+              <img data-src="img/morethanjustfiction/07.jpg" class="lazyload" />
             </div>
+          <!-- </div> -->
 
             <span class="hide">
             <div class="box">
               <img
-                data-src="img/po/po-03.png"
+                data-src="img/morethanjustfiction/01.jpg"
                 class="lazyload" />
             </div>
           </span>
@@ -259,19 +261,28 @@
     <script type="text/javascript" src="js/functions.js"></script>
     <script>
     $(document).ready(function(){
-      var $grid = $('.grid').masonry({
-        itemSelector: '.box',
-        columnWidth: '.box-sizer3',
-        gutter: 32,
-        // horizontalOrder: true,
-        isFitWidth: true,
-        transitionDuration: '0.2s'
+       // var $slider3 =
+       $('.minislideshow').slick({
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 1000,
+         speed: 0,
+         cssEase: 'linear',
+         fade: true,
+         infinite: true,
+         prevArrow: false,
+         nextArrow: false,
+         pauseOnFocus: false,
+         pauseOnHover: false,
+         // lazyLoad: 'progressive',
+       });
+
+       // $slider3.find(".slick-slide").on("click", function(){
+       //    $slider3.slick("slickNext");
+       //  });
       });
-      // layout Masonry after each image loads
-      $grid.imagesLoaded().progress( function() {
-        $grid.masonry('layout');
-      });
-    });
+
     </script>
 
 

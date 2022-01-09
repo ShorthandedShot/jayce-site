@@ -118,6 +118,25 @@
     <script type="text/javascript" src="js/lazysizes.min.js" async=""></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
+    <script>
+    $(document).ready(function(){
+      var $slider2 = $('.pic').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 0,
+        cssEase: 'linear',
+        fade: true,
+        infinite: true,
+        prevArrow: false,
+        nextArrow: false,
+        // lazyLoad: 'progressive',
+      });
+
+      $slider2.find(".slick-slide").on("click", function(){
+         $slider2.slick("slickNext");
+       });
+      });
+    </script>
 
   </body>
 
