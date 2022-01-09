@@ -33,12 +33,14 @@ $(document).ready(function(){
    });
 
   // LIGHTBOX LIGHTBOX
-  $('.grid').magnificPopup({
+  $('.popup').magnificPopup({
     delegate: 'a',
     type:'image',
     gallery: {
       enabled: true
-    }
+    },
+    showCloseBtn: false,
+    closeOnContentClick: true,
 
   });
 

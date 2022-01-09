@@ -142,7 +142,7 @@ hr {
   background: black;
   /* background: red; */
   justify-content: center;
-  z-index: 9999;
+  z-index: 10;
 }
 
 .footer a:hover {
