@@ -121,7 +121,7 @@ hr {
   justify-content: space-between;
   align-content: center;
   overflow: hidden;
-  z-index: 5;
+  z-index: 999;
 }
 
 .header {
