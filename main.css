@@ -150,7 +150,7 @@ hr {
 }
 
 #code:after {
-  content:'✴  ✴  ✴  ✴  ✴';
+  content:'✶  ✶  ✶  ✶  ✶';
   /* line-height: 1; */
   /* margin-top: -1rem; */
 }
