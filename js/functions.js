@@ -34,6 +34,22 @@ $(document).ready(function(){
      $slider2.slick("slickNext");
    });
 
+   var $slider3 = $('.mini-slideshow').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     speed: 0,
+     cssEase: 'linear',
+     fade: true,
+     infinite: true,
+     prevArrow: false,
+     nextArrow: false,
+     // lazyLoad: 'progressive',
+   });
+
+   $slider3.find(".slick-slide").on("click", function(){
+      $slider3.slick("slickNext");
+    });
+
 // GRID GRID GRID
    var $grid = $('.grid').masonry({
      itemSelector: '.box',
