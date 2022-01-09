@@ -587,7 +587,7 @@ hr {
   /* GRIDS 500PX */
   .grid .box-width1, .grid .box-width2 {
     /* width: calc(60vw - 32px); */
-    width: calc(80vw);
+    /* width: calc(80vw); */
   }
 
 }
