@@ -581,7 +581,7 @@ hr {
   }
 
   .project .gallery {
-    grid-gap: 0;
+    grid-gap:2rem;
   }
 
   .gallery .box {

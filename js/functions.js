@@ -14,6 +14,18 @@ $(document).ready(function(){
     focusOnSelect: false,
   });
 
+  var $slider = $('#pic').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 0,
+    cssEase: 'linear',
+    fade: true,
+    infinite: true,
+    prevArrow: false,
+    nextArrow: false,
+    // lazyLoad: 'progressive',
+  });
+
   $slider.find(".slick-slide").on("click", function(){
      $slider.slick("slickNext");
    });
