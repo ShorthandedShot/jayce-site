@@ -39,7 +39,7 @@ $(document).ready(function(){
     gallery: {
       enabled: true
     },
-    showCloseBtn: false,
+    showCloseBtn: true,
     closeOnContentClick: true,
 
   });

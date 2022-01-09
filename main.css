@@ -21,7 +21,7 @@ html, body {
 
 /* IDK WHAT 2 CALL THIS.. BUT Y'KNOW */
 
-img {
+img, video {
   max-width:100%;
 }
 
@@ -284,13 +284,13 @@ hr {
   row-gap: 1rem;
 }
 
-.contact #info a, .contact #highlight {
+.contact #info a, .contact #highlight, .desc a {
   background: white;
   text-decoration: none;
   color: black;
 }
 
-.contact #info a:hover {
+.contact #info a:hover, .desc a:hover {
   background: none;
   text-decoration: line-through;
   color: white;
@@ -322,11 +322,6 @@ hr {
   row-gap: 8rem;
 }
 
-.work a {
-  color: white;
-  text-decoration: none;
-}
-
 .project {
   display: flex;
   flex-direction: column;
@@ -341,24 +336,25 @@ hr {
   align-items: flex-end;
 }
 
-.project .title h3 a {
-  text-align:left;
-}
-
 .project .titledate a {
+  color: white;
   text-decoration: underline;
 }
+
 .project .titledate a:hover {
   text-decoration: line-through;
 }
 
+.project .title {
+  text-align: left;
+}
+
 .project p {
-  /* font-size: 1.5em; */
   margin: 0 auto;
 }
 
 .project .desc {
-
+    text-transform: lowercase;
 }
 
 .project .gallery {
@@ -416,6 +412,10 @@ hr {
     /* outline: 2px dotted white; */
 }
 
+.grid .box video {
+  /* margin-bottom: 2.5rem; */
+}
+
 .grid .box-sizer2 {
   width: 40%;
 }
@@ -436,6 +436,10 @@ hr {
 
 .grid .box-width-full {
   width: calc(60vw);
+}
+
+.grid .video-content {
+
 }
 
 #hidden {
