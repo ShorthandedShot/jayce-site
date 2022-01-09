@@ -371,7 +371,7 @@ hr {
   display: flex;
   justify-content: center;
   align-content: center;
-  /* background: none; */
+  background: none;
 }
 
 .gallery .box img {
@@ -412,7 +412,7 @@ hr {
     /* outline: 2px dotted white; */
 }
 
-.grid .box video {
+.grid .box .video {
   object-fit: cover;
 }
 
@@ -562,6 +562,11 @@ hr {
     bottom: 0;
     background: black;
 
+  }
+
+  /* LANDING */
+  .landing {
+    height: 80vh;
   }
 
   /* CONTACT 500PX */
