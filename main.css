@@ -378,10 +378,14 @@ hr {
   /* background: none; */
 }
 
+.gallery .minislideshow {
+  height: fit-content;
+}
+
 .gallery .box img {
   object-fit: cover;
   /* object-fit: contain; */
-  /* align-self: center; */
+  align-self: center;
 
 }
 
@@ -452,10 +456,21 @@ hr {
   display: none;
 }
 
+.show {
+  display: none;
+}
+
 /* lazysizes testing... */
 
 
 /* RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS */
+
+@media screen and (max-width: 1020px) {
+
+  .hide2 {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .header {
@@ -523,6 +538,7 @@ hr {
 
 
   /* WORKS 800PX */
+
   .project {
     width: 80vw;
   }
@@ -592,6 +608,10 @@ hr {
 
   .hide {
     display: none;
+  }
+
+  .show {
+    display: block;
   }
 
   .project .gallery {
