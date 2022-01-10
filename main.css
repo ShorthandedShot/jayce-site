@@ -25,6 +25,10 @@ img, video {
   max-width:100%;
 }
 
+video {
+  object-fit: fill;
+}
+
 a {
   /* color: red; */
 
@@ -418,6 +422,7 @@ hr {
 
 .grid .box-sizer2 {
   width: 40%;
+  /* width: calc(20vw  - 22px); */
 }
 
 .grid .box-sizer3 {
@@ -429,7 +434,7 @@ hr {
   width: calc(30vw - 16px);
 }
 
-.grid .box-width2 {
+.grid .box-width2, {
   /* width: calc(40vw  - 16px); */
   width: calc(20vw  - 22px);
 }
@@ -443,6 +448,7 @@ hr {
 }
 
 #hidden {
+  visibility: hidden;
   display: none;
 }
 
