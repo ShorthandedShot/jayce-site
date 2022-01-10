@@ -361,6 +361,10 @@ hr {
     text-transform: lowercase;
 }
 
+.desc .underline {
+  text-decoration: underline;
+}
+
 .project .gallery {
   width: 100%;
   display: grid;
