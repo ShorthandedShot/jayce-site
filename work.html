@@ -110,20 +110,24 @@
           </div>
 
           <div class="gallery">
-            <div class="box">
+            <!-- <div class="box"> -->
+            <div class="minislideshow">
               <img
                 data-src="img/unknownsender/titlescreen-v2.jpg"
                 class="lazyload"
                 />
+                <img data-src="img/unknownsender/01.jpg" class="lazyload" />
+                <img data-src="img/unknownsender/02.jpg" class="lazyload" />
+                <img data-src="img/unknownsender/03.jpg" class="lazyload" />
             </div>
 
-            <span class="hide">
+            <!-- <span class="hide">
             <div class="box">
               <img
-                data-src="img/unknownsender/02.jpg"
+                data-src="img/unknownsender/03.jpg"
                 class="lazyload" />
             </div>
-          </span>
+          </span> -->
           </div>
 
         </div>
@@ -193,7 +197,6 @@
           </div>
 
           <div class="gallery">
-            <div class="box-sizer3" id="hidden"></div>
 
             <!-- <div class="box"> -->
             <div class="minislideshow">
@@ -352,15 +355,15 @@
          slidesToShow: 1,
          slidesToScroll: 1,
          autoplay: true,
-         autoplaySpeed: 1000,
+         autoplaySpeed: 1500,
          speed: 0,
          cssEase: 'linear',
          fade: true,
          infinite: true,
          prevArrow: false,
          nextArrow: false,
-         pauseOnFocus: false,
-         pauseOnHover: false,
+         pauseOnFocus: true,
+         pauseOnHover: true,
          // lazyLoad: 'progressive',
        });
 
