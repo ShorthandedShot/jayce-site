@@ -1,3 +1,7 @@
+jQuery(document).on('lazyloaded', function(e) {
+  jQuery('.grid').masonry({}).masonry('layout');
+});
+
 $(document).ready(function() {
 
   // GRID GRID GRID
@@ -27,8 +31,4 @@ $(document).ready(function() {
 
   });
 
-});
-
-jQuery(document).on('lazyloaded', function(e) {
-  jQuery('.grid').masonry({}).masonry('layout');
 });

@@ -429,8 +429,7 @@ hr {
 }
 
 .grid .box-sizer2 {
-  width: 40%;
-  /* width: calc(20vw  - 22px); */
+  width: 50%;
 }
 
 .grid .box-sizer3 {
