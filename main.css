@@ -371,7 +371,7 @@ hr {
   display: flex;
   justify-content: center;
   align-content: center;
-  background: none;
+  /* background: none; */
 }
 
 .gallery .box img {
@@ -413,7 +413,7 @@ hr {
 }
 
 .grid .box .video {
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .grid .box-sizer2 {
