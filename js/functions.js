@@ -1,8 +1,3 @@
-jQuery(document).on('lazyloaded', function(e) {
-  jQuery('.grid').masonry({}).masonry('layout');
-
-});
-
 $(document).ready(function() {
   $('.grid').masonry({
     itemSelector: '.box',
@@ -51,5 +46,10 @@ $(document).ready(function() {
     closeOnContentClick: true,
 
   });
+
+});
+
+jQuery(document).on('lazyloaded', function(e) {
+  jQuery('.grid').masonry({}).masonry('layout');
 
 });
