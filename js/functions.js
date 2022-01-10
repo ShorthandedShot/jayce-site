@@ -7,19 +7,6 @@ $(document).ready(function() {
     isFitWidth: true,
     transitionDuration: '0.2s'
 })
-
-  // // GRID GRID GRID
-  // var $grid = $('.grid').imagesLoaded( function() {
-  //   // init Masonry after all images have loaded
-  //   $grid.masonry({
-  //     itemSelector: '.box',
-  //     columnWidth: '.box-sizer2',
-  //     gutter: 32,
-  //     // horizontalOrder: true,
-  //     isFitWidth: true,
-  //     transitionDuration: '0.2s'
-  //   });
-  // });
   // // GRID GRID GRID
   //
   // var $grid = $('.grid').masonry({
