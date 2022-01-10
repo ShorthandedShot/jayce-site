@@ -99,8 +99,9 @@
     <script type="text/javascript" src="../js/functions.js"></script>
     <script type="text/javascript">
       // GRID GRID GRID
-      $(document).ready(function() {
-        var $grid = $('.grid').masonry({
+      var $grid = $('.grid').imagesLoaded( function() {
+        // init Masonry after all images have loaded
+        $grid.masonry({
           itemSelector: '.box',
           columnWidth: '.box-sizer2',
           gutter: 32,
@@ -108,11 +109,6 @@
           isFitWidth: true,
           transitionDuration: '0.2s'
         });
-      // layout Masonry after each image loads
-        $grid.imagesLoaded().progress(function() {
-          $grid.masonry('layout');
-        });
-
       });
     </script>
 
