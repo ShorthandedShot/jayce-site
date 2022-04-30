@@ -327,11 +327,12 @@ hr {
 }
 
 .work-main {
+  width: 100%;
   flex-direction: row !important;
   flex-wrap: wrap;
   gap: 4em 4em;
-  margin-top: 2em;
-  margin-bottom: 8em;
+  /* margin-top: 2em;
+  margin-bottom: 8em; */
 
 }
 
