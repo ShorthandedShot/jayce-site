@@ -313,10 +313,10 @@ hr {
 
 /* MAIN WORKS PAGE */
 
-.work {
+.work, .work-main {
   width: 100%;
-  margin: 0 auto 120px auto;
-  /* padding: 25px 0; */
+  margin: 0 auto;
+  margin-bottom: 8em;
   overflow: hidden;
   /* background: gold; */
   display: flex;
@@ -324,6 +324,20 @@ hr {
   justify-content: center;
   align-items: center;
   row-gap: 8rem;
+}
+
+.work-main {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  gap: 4em 2em;
+  margin-top: 2em;
+  margin-bottom: 8em;
+
+}
+
+.work-main .project {
+  width: 45vw !important;
+  align-self: flex-start;
 }
 
 .project {
@@ -468,14 +482,36 @@ hr {
 
 /* RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS */
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1300px) {
 
   .hide2 {
     display: none;
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .work-main {
+    flex-direction: column;
+  }
+
+  .work-main .project {
+    align-self: flex-start;
+    width: 80vw !important;
+  }
+
+  .hide2 {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  .hide, .hide2 {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+
   .header {
     height: fit-content;
     width: auto;
