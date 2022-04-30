@@ -329,7 +329,7 @@ hr {
 .work-main {
   flex-direction: row !important;
   flex-wrap: wrap;
-  gap: 4em 2em;
+  gap: 4em 4em;
   margin-top: 2em;
   margin-bottom: 8em;
 
