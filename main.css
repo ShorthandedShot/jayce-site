@@ -212,11 +212,16 @@ hr {
 }
 
 .landing .slideshow {
-  display:flex;
-  /* align-items: center; */
   width: 500px;
   height: 300px;
-  overflow: hidden;
+  text-align: center;
+}
+
+.landing .slideshow img {
+  /* object-fit: cover; */
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 300px;
 }
 
 .slideshow #landing-slideshow {
@@ -224,7 +229,6 @@ hr {
   width: 100%;
   /* align-self: center; */
   /* height: 300px; */
-  /* outline: 2px solid white; */
   /* overflow: hidden; */
 }
 
