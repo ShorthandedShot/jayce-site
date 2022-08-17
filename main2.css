@@ -110,14 +110,28 @@ hr {
 
 /* TESTESTSTSTST */
 
-
-/* HEADER + FOOTER */
-.header {
+/* TYPEFACE CSS */
+.header,
+.landing .menu,
+.landing .subhead,
+.about .intro {
   font-family: 'Terminal', sans-serif;
-  font-size: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.landing .name,
+.about .name {
+  font-family: 'Basteleur', serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* HEADER */
+.header {
   width: 100vw;
   height:4em;
-  padding: 1em 1.3em 1em 1.3em;
+  padding: 1em 1.3em !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,34 +152,28 @@ hr {
 }
 
 .header,
-.landing .name,
-.landing .subhead,
-.landing .menu {
+.landing {
   text-transform: uppercase;
   text-align: center;
 }
 
-.landing .subhead,
-.landing .menu {
-  font-family: 'Terminal', sans-serif;
+.header,
+.landing .menu,
+.landing .subhead {
+  /* font-family: 'Terminal', sans-serif; */
   font-size: 1.5em;
   padding: 0em 1.3em;
 }
 
 .landing .menu {
   width: fit-content;
+  margin: 0 auto 10px auto;
   display: flex;
-  gap: 14vw;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  text-align: center;
-  /* padding: 0em 1.3em; */
+  gap: 14vw;
 }
 
-.landing .menu .link {
-  padding: 10px auto;
-}
 .header a,
 .landing .menu a {
   text-decoration: none;
@@ -184,17 +192,10 @@ hr {
   margin: calc(-.8em - 1px);
 }
 
-.landing .menu:hover ~ .name_container .name {
-    filter: blur(8px) grayscale(0) !important;
-}
-
 .landing .name_container {
   margin: 30px 0em 35px 0em;
   padding: 20px 0 0 0;
-  transition: all 0.15s ease-out;
   position: relative;
-  /* border-top: 1px solid white; */
-  /* border-bottom: 1px solid white; */
 }
 
 .landing .name_container::before {
@@ -205,28 +206,26 @@ hr {
   width: 100vw;
   height: 100%;
   background-image: url("img/assets/asset_1-2.jpg");
-  filter: blur(0px) opacity(0.6) grayscale(1);
-  background-position: 15% 45%;
+  filter: blur(0px) opacity(0.6) grayscale(1) contrast(1.2);
+  background-size: 120%;
+  background-position: 10% 60%;
+}
+
+.landing .menu:hover ~ .name_container .name {
+    filter: blur(8px) !important;
 }
 
 .landing .name {
   position: relative;
-  font-family: 'Basteleur', serif;
+  /* font-family: 'Basteleur', serif; */
   font-size: 12rem;
-  font-kerning: auto;
   line-height: 1em;
   transition: all 0.3s ease-in-out;
-  /* filter: blur(8px); */
 }
-
-/* .landing .name:hover {
-  filter: blur(0px);
-} */
 
 /* CONTACT PAGE */
 .contact_bg {
-  width: 100%;
-  /* height: 100%; */
+  width: 100vw;
   height: 100vh;
   overflow-y: hidden;
   display: flex;
@@ -239,59 +238,43 @@ hr {
   left: 0;
   width: 100%;
   height: 100% !important;
-  filter: blur(0px) grayscale(1.0) opacity(0.4);
+  filter: blur(0px) opacity(0.3) grayscale(1) contrast(1.2);
   background-image: url("img/assets/asset_1-2.jpg");
   background-size: cover;
   background-position: 10% 65%;
 }
 
 .header:hover ~ .contact_bg .about {
-    filter: blur(8px) grayscale(0) !important;
+    filter: blur(8px) !important;
 }
 
 .about {
-  padding: 7em 2em 4em 2em;
   width: 100%;
-  position: relative;
-  transition: all 0.3s ease-in-out;
   margin-top: auto !important;
+  padding: 7em 2em 4em 2em;
+  position: relative;
   overflow-y: scroll;
-}
-
-.about .intro,
-.about p,
-.about ul {
-  /* border: 1px solid white; */
+  transition: all 0.3s ease-in-out;
 }
 
 .about .intro {
-  font-family: 'Terminal', sans-serif;
-  font-weight: normal;
-  font-style: normal;
+  /* font-family: 'Terminal', sans-serif; */
   font-size: 4.5rem;
   line-height: 0.95em;
-  /* background: red; */
   max-width: 15em;
 }
 
-#about_name {
-  font-family: 'Basteleur', serif  !important;
+.about .name {
+  /* font-family: 'Basteleur', serif  !important; */
   font-weight: normal;
   font-style: normal;
   font-size: 4rem;
 }
 
-.about p,
-.about ul {
+.about p {
   margin: 1.5em 0 0 0;
   max-width: 750px;
   line-height: 1.4em;
-}
-
-.about ul {
-  text-indent: -1.5em;
-  margin-left: 0em;
-  /* margin-top: 4em !important; */
 }
 
 .about a{
@@ -300,9 +283,6 @@ hr {
 }
 
 .about a:hover {
-  /* background: white; */
-  /* background: black; */
-  /* color: black; */
   border: 1px solid white;
   text-decoration: none;
   border-radius: 100px;
@@ -383,14 +363,6 @@ hr {
     #about_name {
       font-size: 2rem;
     }
-}
-
-@media screen and (max-height: 800px) {
-  /* CONTACT PAGE */
-  .about {
-    /* margin-top: 15em !important; */
-    /* background: red; */
-  }
 }
 
 /* CUSTOM TYPEFACES */
