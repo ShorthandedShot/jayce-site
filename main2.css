@@ -111,10 +111,10 @@ hr {
 /* HEADER + FOOTER */
 .header {
   width: 100vw;
-  height:3.5em;
+  height:4em;
   font-family: 'Terminal', sans-serif;
   font-size: 1.5em;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 1em 1em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -225,9 +225,10 @@ hr {
 
 /* CONTACT PAGE */
 .about {
-  padding: 10em 3em 0em 3em;
-  width: 100vw;
+  padding: 8em 3em 0em 3em;
+  width: 100%;
   /* background: green; */
+  overflow: hidden;
 }
 
 .about {
@@ -241,7 +242,7 @@ hr {
   font-size: 4.5rem;
   line-height: 0.95em;
   /* background: red; */
-  width: 13.5em;
+  max-width: 15em;
 }
 
 #about_name {
@@ -254,20 +255,19 @@ hr {
 .about p,
 .about ul {
   margin: 1.5em 0 0 0;
-  /* margin: 0; */
-  /* border: 1px solid white; */
-  width: 750px;
-  /* background: pink; */
-  line-height: 1.3em;
+  max-width: 750px;
+  line-height: 1.4em;
 }
 
 .about ul {
   text-indent: -1.5em;
   margin-left: 0em;
+  margin-top: 4em !important;
 }
 
 .about a{
   transition: all 0.15s ease-out;
+  text-transform: uppercase;
 }
 .about a:hover {
   /* background: white; */
@@ -307,7 +307,7 @@ hr {
   /* CONTACT PAGE */
   .about .intro {
     font-size: 4rem;
-    width: 100% !important;
+    max-width: 100% !important;
   }
   #about_name {
     font-size: 3.5rem;
@@ -325,11 +325,6 @@ hr {
     }
 
     /* CONTACT PAGE */
-    .about {
-      padding: 8em 3em 0em 3em;
-      width: 100vw;
-      /* background: green; */
-    }
 
     .about .intro {
       font-size: 3rem;
