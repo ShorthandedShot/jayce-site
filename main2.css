@@ -156,7 +156,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   gap: 14vw;
-  padding: 0em 1.3em 0em 1.3em;
+  padding: 0em 1.2em 0em 1.2em;
   position: relative;
   /* flex-wrap: wrap; */
 }
@@ -220,7 +220,7 @@ hr {
 }
 
 .landing .subhead {
-  padding: 0em 2em;
+  padding: 0em 1em;
 }
 
 /* .landing .name:hover {
@@ -229,7 +229,7 @@ hr {
 
 /* CONTACT PAGE */
 .about {
-  padding: 8em 3em 0em 3em;
+  padding: 8em 2em 4em 2em;
   width: 100%;
   /* background: green; */
   overflow: hidden;
@@ -266,12 +266,12 @@ hr {
 .about ul {
   text-indent: -1.5em;
   margin-left: 0em;
-  margin-top: 4em !important;
+  /* margin-top: 4em !important; */
 }
 
 .about a{
   transition: all 0.15s ease-out;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .about a:hover {
   /* background: white; */
@@ -324,10 +324,6 @@ hr {
       font-size: 5.5rem;
     }
 
-    .landing .menu {
-      width: ;
-    }
-
     /* CONTACT PAGE */
 
     .about .intro {
@@ -338,23 +334,27 @@ hr {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
   /* LANDING PAGE */
     .landing .name {
       font-size: 4.5rem;
     }
 
     .landing .menu {
-      width: ;
+      gap: 10vw;
     }
 
     /* CONTACT PAGE */
-
+    .about {
+      /* word-spacing: 0.1em; */
+      text-align: center;
+    }
     .about .intro {
-      font-size: 3rem;
+      font-size: 1.5rem;
+      line-height: 1.4em;
     }
     #about_name {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
 }
 
