@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+  cursor: crosshair;
+  font-size: 100%;
+
+}
+
+*::selection {
+  background-color: white;
+  color: black;
+
+}
+
+html, body {
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+  margin: 0 auto;
+  overflow: overlay;
+}
+
+/* IDK WHAT 2 CALL THIS.. BUT Y'KNOW */
+
+img, video {
+  max-width:100%;
+  width: auto !important;
+  max-height: 100%;
+  min-height: 100%;
+  height: auto !important;
+}
+
+video {
+  object-fit: fill;
+}
+
+a {
+  color: inherit;
+
+}
+
+a:hover {
+  /* background-color: white; */
+  /* color: black; */
+  cursor: pointer;
+}
+
+p, ul, li {
+  font-family: 'Terminal', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Basteleur', serif ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+
+
+ul {
+    list-style: none;
+    /* margin-left: -3em; */
+    /* list-style-position: inside; */
+    /* text-indent: 3rem;  */
+    text-indent: -1rem;
+    margin-left: -2rem;
+}
+
+li:before {
+    content: "☆ ";
+    margin-right: 5px;
+}
+
+hr {
+  border: 1px solid white;
+  margin: 0;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 30px;
+}
+
+/* TESTESTSTSTST */
+
+
+/* HEADER + FOOTER */
+.header {
+  width: 100vw;
+  height:3.5em;
+  font-family: 'Terminal', sans-serif;
+  font-size: 1.5em;
+  padding: 1em 2em 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: none;
+}
+
+
+
+/* LANDING PAGE */
+.landing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header,
+.landing .name,
+.landing .subhead,
+.landing .menu {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.landing .subhead,
+.landing .menu {
+  font-family: 'Terminal', sans-serif;
+  font-size: 1.5em;
+}
+
+.landing .menu {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 14vw;
+  padding: 0px inherit;
+  position: relative;
+  /* flex-wrap: wrap; */
+}
+.landing .menu .link {
+  padding: 10px auto;
+}
+.header a,
+.landing .menu a {
+  text-decoration: none;
+  transition: all 0.25s linear;
+  border: 1px solid transparent !important;
+  border-radius: 100%;
+  padding: .5em .8em;
+  margin: calc(-.8em - 1px);
+}
+
+.header a:hover,
+.landing .menu a:hover {
+  border: 1px solid white !important;
+  border-radius: 100%;
+  padding: .5em .8em;
+  margin: calc(-.8em - 1px);
+}
+
+.landing .menu:hover ~ .name_container .name {
+    filter: blur(8px) grayscale(0) !important;
+}
+
+.landing .name_container {
+  margin: 30px 0em 35px 0em;
+  padding: 20px 0 0 0;
+  transition: all 0.15s ease-out;
+  /* background-image: url("img/assets/asset_1-2.jpg"); */
+  /* filter: blur(0px) opacity(1) grayscale(1); */
+  background-position: 15% 45%;
+  position: relative;
+  /* border-top: 1px solid white; */
+  /* border-bottom: 1px solid white; */
+}
+
+.landing .name_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-image: url("img/assets/asset_1-2.jpg");
+  filter: blur(0px) opacity(0.6) grayscale(1);
+  background-position: 15% 45%;
+}
+
+.landing .name {
+  position: relative;
+  font-family: 'Basteleur', serif;
+  font-size: 12rem;
+  font-kerning: auto;
+  line-height: 1em;
+  transition: all 0.3s ease-in-out;
+  /* filter: blur(8px); */
+}
+
+/* .landing .name:hover {
+  filter: blur(0px);
+} */
+
+/* CONTACT PAGE */
+.about {
+  padding: 10em 3em 0em 3em;
+  width: 100vw;
+  /* background: green; */
+}
+
+.about {
+  /* background-image: url("img/assets/asset_1-2.jpg"); */
+}
+
+.about .intro {
+  font-family: 'Terminal', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.5rem;
+  line-height: 0.95em;
+  /* background: red; */
+  width: 13.5em;
+}
+
+#about_name {
+  font-family: 'Basteleur', serif  !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.about p,
+.about ul {
+  margin: 1.5em 0 0 0;
+  /* margin: 0; */
+  /* border: 1px solid white; */
+  width: 750px;
+  /* background: pink; */
+  line-height: 1.3em;
+}
+
+.about ul {
+  text-indent: -1.5em;
+  margin-left: 0em;
+}
+
+.about a{
+  transition: all 0.15s ease-out;
+}
+.about a:hover {
+  /* background: white; */
+  /* background: black; */
+  /* color: black; */
+  border: 1px solid white;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 2px 15px;
+}
+
+
+/* RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS */
+
+@media screen and (max-width: 1300px) {
+  /* LANDING PAGE */
+    .landing .name {
+      font-size: 9rem;
+    }
+
+    .landing .menu {
+      width: ;
+    }
+
+  /* CONTACT PAGE */
+  .about .intro {
+  }
+
+  .about p,
+  .about ul {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* LANDING PAGE */
+  /* CONTACT PAGE */
+  .about .intro {
+    font-size: 4rem;
+    width: 100% !important;
+  }
+  #about_name {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* LANDING PAGE */
+    .landing .name {
+      font-size: 5.5rem;
+    }
+
+    .landing .menu {
+      width: ;
+    }
+
+    /* CONTACT PAGE */
+    .about {
+      padding: 8em 3em 0em 3em;
+      width: 100vw;
+      /* background: green; */
+    }
+
+    .about .intro {
+      font-size: 3rem;
+    }
+    #about_name {
+      font-size: 2.5rem;
+    }
+}
+
+/* CUSTOM TYPEFACES */
+
+@font-face {
+  font-family: 'Terminal';
+  src: url("fonts/terminal-grotesque.woff2") format("woff2"),
+       url("fonts/terminal-grotesque.woff") format("woff"),
+       url("fonts/terminal-grotesque.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Basteleur';
+  src: url("fonts/Basteleur-Moonlight.woff2") format("woff2"),
+       url("fonts/Basteleur-Moonlight.woff") format("woff"),
+       url("fonts/Basteleur-Moonlight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
