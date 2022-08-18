@@ -49,7 +49,7 @@ p, ul, li {
   font-family: 'Terminal', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h1, h2, h3 {
@@ -59,6 +59,7 @@ h1, h2, h3 {
 }
 
 h1 {
+  font-size: 3rem;
 
 }
 
@@ -127,6 +128,19 @@ hr {
   font-style: normal;
 }
 
+/* TRANSITIONS - BLUR */
+.landing .name,
+.about,
+.work {
+  transition: filter 0.3s ease-in-out;
+}
+
+.landing .menu:hover ~ .name_container .name,
+.header:hover ~ .contact_bg .about,
+.header:hover ~ .work {
+    filter: blur(8px) !important;
+}
+
 /* HEADER */
 .header {
   width: 100vw;
@@ -137,12 +151,21 @@ hr {
   align-items: center;
   position: fixed;
   top: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 250%);
   z-index: 9999999999999999999999;
 }
 
 
 
-/* LANDING PAGE */
+
+/*
+*
+*
+LANDING PAGE
+*
+*
+*/
+
 .landing {
   height: 100vh;
   width: 100vw;
@@ -211,19 +234,20 @@ hr {
   background-position: 10% 60%;
 }
 
-.landing .menu:hover ~ .name_container .name {
-    filter: blur(8px) !important;
-}
-
 .landing .name {
   position: relative;
   /* font-family: 'Basteleur', serif; */
   font-size: 12rem;
   line-height: 1em;
-  transition: all 0.3s ease-in-out;
 }
 
-/* CONTACT PAGE */
+/*
+*
+*
+CONTACT PAGE
+*
+*
+*/
 .contact_bg {
   width: 100vw;
   height: 100vh;
@@ -244,17 +268,12 @@ hr {
   background-position: 10% 65%;
 }
 
-.header:hover ~ .contact_bg .about {
-    filter: blur(8px) !important;
-}
-
 .about {
   width: 100%;
   margin-top: auto !important;
   padding: 7em 2em 4em 2em;
   position: relative;
   overflow-y: scroll;
-  transition: all 0.3s ease-in-out;
 }
 
 .about .intro {
@@ -289,80 +308,187 @@ hr {
   padding: 2px 15px;
 }
 
+/*
+*
+*
+WORKS PAGE
+*
+*
+*/
+.work {
+  padding: 7em 2em 4em 2em;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  justify-content: center;
+  width: 100vw;
+  /* margin: 0 auto; */
+  /* transition: all 0.5s ease-in-out; */
+}
+
+.work .proj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  max-height: 450px;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+.work .image {
+  height: 100%;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.work .image img {
+  height: 100%;
+  width: auto !important;
+  /* width: 100%; */
+  object-fit: contain;
+  object-position: center;
+}
+
+.work .text {
+  width: fit-content;
+  /* border: 1px solid white; */
+  display: flex;
+
+}
+
+.work .text h2,
+.work .text p {
+  margin: 0;
+}
+
+.work .text h2,
+.work .text::before,
+.work .text::after {
+  font-size: 1.5rem;
+}
+
+.work a {
+  text-decoration: none;
+}
+
+.work a:hover .text::before {
+  content: "☆";
+  margin-right: 8px;
+  margin-top: 3px;
+}
+.work a:hover .text::after {
+  content: "☆";
+  margin-left: 8px;
+  margin-top: 3px;
+}
 
 /* RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS */
 
-@media screen and (max-width: 1300px) {
-  /* LANDING PAGE */
-    .landing .name {
-      font-size: 9rem;
-    }
-
-    .landing .menu {
-      width: ;
-    }
-
-  /* CONTACT PAGE */
-  .about .intro {
+@media screen and (max-width: 1320px) {
+  /*
+  *
+  LANDING PAGE
+  *
+  */
+  .landing .name {
+    font-size: 9rem;
   }
 
+  .landing .menu {
+    width: ;
+  }
+
+  /*
+  *
+  CONTACT PAGE
+  *
+  */
   .about p,
   .about ul {
     width: 100%;
+  }
+  /*
+  *
+  WORKS PAGE
+  *
+  */
+  .work {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 1000px) {
   /* LANDING PAGE */
-  /* CONTACT PAGE */
+  /*
+  *
+  CONTACT PAGE
+  *
+  */
   .about .intro {
     font-size: 4rem;
     max-width: 100% !important;
   }
-  #about_name {
+  .about .name {
     font-size: 3.5rem;
   }
+
 }
 
 @media screen and (max-width: 800px) {
-  /* LANDING PAGE */
-    .landing .name {
-      font-size: 5.5rem;
-    }
+  /*
+  *
+  LANDING PAGE
+  *
+  */
+  .landing .name {
+    font-size: 5.5rem;
+  }
 
-    /* CONTACT PAGE */
+  /* CONTACT PAGE */
+  .about .intro {
+    font-size: 3rem;
+  }
+  .about .name {
+    font-size: 2.5rem;
+  }
 
-    .about .intro {
-      font-size: 3rem;
-    }
-    #about_name {
-      font-size: 2.5rem;
-    }
+  /* WORKS PAGE */
+  .work {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media screen and (max-width: 420px) {
   /* LANDING PAGE */
-    .landing .name {
-      font-size: 4.5rem;
-    }
+  .landing .name {
+    font-size: 4.5rem;
+  }
 
-    .landing .menu {
-      width: 100vw;
-      gap: 0;
-    }
+  .landing .menu {
+    width: 100vw;
+    gap: 0;
+  }
 
-    /* CONTACT PAGE */
-    .about {
-      /* word-spacing: 0.1em; */
-      text-align: center;
-    }
-    .about .intro {
-      font-size: 1.5rem;
-      line-height: 1.4em;
-    }
-    #about_name {
-      font-size: 2rem;
-    }
+  /* CONTACT PAGE */
+  .about {
+    /* word-spacing: 0.1em; */
+    text-align: center;
+  }
+  .about .intro {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+  }
+  .about .name {
+    font-size: 2rem;
+  }
+
+  /* WORKS PAGE */
+  .works {
+    padding: 7em .5em 4em .5em;
+  }
 }
 
 /* CUSTOM TYPEFACES */
