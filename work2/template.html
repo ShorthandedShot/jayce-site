@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../js2/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../js2/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="../js2/photoswipe/photoswipe.css">
+    <noscript><style type="text/css"> .lazy {display: none;}</style></noscript>
   </head>
 
   <body>
@@ -39,24 +40,36 @@
 
       <!-- IMAGES / SLIDESHOW EXAMPLE -->
       <div class="gallery slideshow photoswipe">
-        <a href="../img/anderson/01.gif"
-            data-pswp-width="1080"
-            data-pswp-height="1080">
-          <img src="../img/anderson/01.gif"
+        <a
+          href="../img/anderson/01.gif"
+          data-pswp-width="1080"
+          data-pswp-height="1080">
+          <img
+            src="../img/anderson/01.gif"
             alt="test" />
         </a>
-
-        <a href="../img/assets/film1.jpg"
-            data-pswp-width="1360"
-            data-pswp-height="906">
-          <img src="../img/assets/film1.jpg"
+        <!-- lAZYLOAD /LAZYSIZES -->
+        <a
+          href="../img/assets/film1.jpg"
+          data-pswp-width="1360"
+          data-pswp-height="906">
+          <img
+            data-src="../img/assets/film1.jpg"
+            class="lazyload"
             alt="test" />
+            <noscript>
+              <img
+                src="../img/assets/film1.jpg"
+                alt="test"/>
+            </noscript>
         </a>
-
-        <a href="../img/ambrosia/catalog-01.png"
-            data-pswp-width="1160"
-            data-pswp-height="967">
-          <img data-lazy="../img/ambrosia/catalog-01.png"
+        <!-- LAZYLOAD / SLICK -->
+        <a
+          href="../img/ambrosia/catalog-01.png"
+          data-pswp-width="1160"
+          data-pswp-height="967">
+          <img
+            data-lazy="../img/ambrosia/catalog-01.png"
             alt="test" />
         </a>
       </div>
@@ -87,17 +100,29 @@
 
       <!-- IMAGES / NO SLIDESHOW -->
       <div class="gallery images photoswipe">
-        <a href="../img/assets/film1.jpg"
-            data-pswp-width="1360"
-            data-pswp-height="906">
-          <img src="../img/assets/film1.jpg"
+        <!-- lAZYLOAD -->
+        <a
+          href="../img/assets/film1.jpg"
+          data-pswp-width="1360"
+          data-pswp-height="906">
+          <img
+            data-src="../img/assets/film1.jpg"
+            class="lazyload"
             alt="test" />
+            <!-- <noscript>
+              <img
+                src="../img/assets/film1.jpg"
+                alt="test"/>
+            </noscript> -->
         </a>
 
-        <a href="../img/assets/film1.jpg"
-            data-pswp-width="1360"
-            data-pswp-height="906">
-          <img src="../img/assets/film1.jpg"
+        <!-- NO LAZYLOAD -->
+        <a
+          href="../img/assets/film1.jpg"
+          data-pswp-width="1360"
+          data-pswp-height="906">
+          <img
+            src="../img/assets/film1.jpg"
             alt="test" />
         </a>
       </div>
@@ -110,6 +135,7 @@
         </video>
       </div>
 
+      <!-- PROJECT TEXT/CAPTION + EXTRA DETAILS -->
       <div class="text desc">
         <!-- <div class="info">
           <p>
@@ -141,6 +167,7 @@
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="../js2/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js2/lazysizes.min.js" async=""></script>
     <script type="text/javascript" src="../js2/moment.js"></script>
     <script type="text/javascript" src="../js2/moment-timezone-with-data.js"></script>
     <script type="text/javascript" src="../js2/slick/slick.min.js"></script>
