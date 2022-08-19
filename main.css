@@ -497,6 +497,8 @@ PAGES - INDIVIDUAL
 .mobile {
   display: none;
 }
+.desktop {
+}
 
 
 
@@ -586,6 +588,10 @@ PAGES - INDIVIDUAL
     display: block;
   }
 
+  .desktop {
+    display: none;
+  }
+
   /* HEADER */
   .header {
     padding: 1em 1.3em !important;
@@ -630,8 +636,16 @@ PAGES - INDIVIDUAL
     text-align: left !important;
   }
 
+  .page .title h1:before {
+    content: "☆ ";
+  }
+
   .page .desc {
     flex-direction: column;
+  }
+
+  .page .info {
+    /* text-align: center !important; */
   }
 }
 
