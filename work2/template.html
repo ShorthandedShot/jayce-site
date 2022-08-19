@@ -63,14 +63,20 @@
                 alt="test"/>
             </noscript>
         </a>
-        <!-- LAZYLOAD / SLICK -->
+
         <a
           href="../img/ambrosia/catalog-01.png"
           data-pswp-width="1160"
           data-pswp-height="967">
           <img
-            data-lazy="../img/ambrosia/catalog-01.png"
+            data-src="../img/ambrosia/catalog-01.png"
+            class="lazyload"
             alt="test" />
+            <noscript>
+              <img
+                src="../img/ambrosia/catalog-01.png"
+                alt="test"/>
+            </noscript>
         </a>
       </div>
 
@@ -109,27 +115,29 @@
             data-src="../img/assets/film1.jpg"
             class="lazyload"
             alt="test" />
-            <!-- <noscript>
+            <noscript>
               <img
                 src="../img/assets/film1.jpg"
                 alt="test"/>
-            </noscript> -->
+            </noscript>
         </a>
 
         <!-- NO LAZYLOAD -->
-        <a
+        <!-- <a
           href="../img/assets/film1.jpg"
           data-pswp-width="1360"
           data-pswp-height="906">
           <img
             src="../img/assets/film1.jpg"
             alt="test" />
-        </a>
+        </a> -->
       </div>
 
       <!-- VIDEO EXAMPLE -->
       <div class="gallery video">
-        <video class="video-content" controls playsinline>
+        <video
+          preload="metadata"
+          controls playsinline>
           <source src="../img/shadows2sound/s2s-01.mp4#t=0.1" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -153,11 +161,19 @@
 
       <!-- IMAGES / NO SLIDESHOW -->
       <div class="gallery images photoswipe">
-        <a href="../img/assets/asset_1-2.jpg"
-            data-pswp-width="3024"
-            data-pswp-height="4032">
-          <img src="../img/assets/asset_1-2.jpg"
+        <a
+          href="../img/assets/asset_1-2.jpg"
+          data-pswp-width="3024"
+          data-pswp-height="4032">
+          <img
+            data-src="../img/assets/asset_1-2.jpg"
+            class="lazyload"
             alt="test" />
+            <noscript>
+              <img
+                src="../img/assets/asset_1-2.jpg"
+                alt="test"/>
+            </noscript>
         </a>
       </div>
 
