@@ -435,6 +435,10 @@ PAGES - INDIVIDUAL
   min-width: 150px;
 }
 
+.page .desc .caption {
+  max-width: 1050px;
+}
+
 .page .desc :first-child {
   margin-top: 0;
 }
@@ -456,6 +460,7 @@ PAGES - INDIVIDUAL
   height: auto;
   object-fit: contain;
   object-position: center;
+  max-height: 600px;
 }
 
 .page .slideshow a {
@@ -488,6 +493,7 @@ PAGES - INDIVIDUAL
 .page .images img {
   object-fit: contain;
   margin: 0;
+  max-height: 600px;
 }
 
 /* .pswp__img--placeholder--blank{     display: none !important; }

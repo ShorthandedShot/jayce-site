@@ -17,11 +17,9 @@ $(document).ready(function() {
       // autoplay: true,
       // autoplaySpeed: 2000,
       // infinite: true,
+      lazyLoad: 'ondemand',
     });
 
-    // $('.slideshow').click(function() {
-    //   $slideshow.slick("slickNext");
-    // });
 
     $(window).resize(function(){
       $('.slideshow')[0].slick.refresh();
