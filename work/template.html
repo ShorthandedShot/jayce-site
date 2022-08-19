@@ -1,103 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>project name | jayce nguyen</title>
+    <title>JAYCE NGUYEN ☆ DESIGNER</title>
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../main.css">
-    <link rel="stylesheet" type="text/css" href="../css/combined.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../js/photoswipe/photoswipe.css">
+    <noscript><style type="text/css"> .lazy {display: none;}</style></noscript>
   </head>
 
   <body>
 
-
-    <!-- HEADER + FOOTER -->
+    <!-- HEADER -->
     <div class="header">
       <div class="link">
-        <h2 style="font-weight: normal;"><a href="../work.html">work</a></h2>
+        <a title="VIEW WORK" href="../work2.html">work</a>
       </div>
-
-      <!-- <div class="link">
-        <h2><a href="../index.html">jayce nguyen</a></h2>
-      </div> -->
-
       <div class="link">
-        <h2><a href="../contact.html">contact</a></h2>
+        <a title="JAYCE'S LOCAL TIME / GO TO LANDING" href="../index2.html">
+          <span id="clock"></span>
+        </a>
       </div>
-    </div>
-
-    <div class="footer">
       <div class="link">
-        <h2><a href="../index.html"><span id="code"></span></a></h2>
+        <a title="CONTACT" href="../contact2.html">contact</a>
       </div>
     </div>
 
     <!-- CONTENT -->
-    <div class="work">
+    <div class="page">
 
-      <div class="project">
-        <div class="titledate">
-          <div class="title">
-            <h3>✶ Title here</h3>
-          </div>
-          <div>
-            <h3>20xx</h3>
-          </div>
-        </div>
-
-        <div class="desc">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt, tellus ac ultricies facilisis, ex mauris suscipit massa, id rutrum diam mi pharetra augue. Nulla facilisi. Nunc accumsan laoreet ligula ut scelerisque. Etiam non aliquam risus. Sed rhoncus ultrices ligula a maximus.</p>
-          <br>
-          <p>in use: </p>
-          </div>
-
-        <div><hr></div>
-
-        <div class="grid popup">
-          <div class="box-sizer2" id="hidden"></div>
-
-          <div class="box box-width1">
-            <a href="../img/">
-              <img
-                data-src="../img/ct/frontpage-01.jpg"
-                class="lazyload" />
-            </a>
-          </div>
-
-          <div class="box box-width1">
-            <a href="../img/">
-              <img
-                data-src="../img/ct/frontpage-01.jpg"
-                class="lazyload" />
-            </a>
-          </div>
-
-          <div class="box box-width-full">
-            <a href="../img/">
-              <img
-                data-src="../img/ct/frontpage-01.jpg"
-                class="lazyload" />
-            </a>
-          </div>
-
-
-        </div>
-
+      <!-- PROJECT TEXT/TITLE + SUBHEADS -->
+      <div class="text title">
+        <h1>☆ Title of Project Here ☆</h1>
+        <p class="subhead">Whatever Skills, Or Type of Project, Here</p>
       </div>
+
+      <!-- IMAGES / SLIDESHOW EXAMPLE -->
+      <div class="gallery slideshow photoswipe">
+        <!-- NO LAZYLOAD -->
+        <a
+          href="../img/anderson/01.gif"
+          data-pswp-width="1080"
+          data-pswp-height="1080">
+          <img
+            src="../img/anderson/01.gif"
+            alt="test" />
+        </a>
+
+        <!-- lAZYLOAD /LAZYSIZES -->
+        <a
+          href="../img/assets/film1.jpg"
+          data-pswp-width="1360"
+          data-pswp-height="906">
+          <img
+            data-src="../img/assets/film1.jpg"
+            class="lazyload"
+            alt="test" />
+            <noscript>
+              <img
+                src="../img/assets/film1.jpg"
+                alt="test"/>
+            </noscript>
+        </a>
+
+        <!-- lAZYLOAD /LAZYSIZES -->
+        <a
+          href="../img/ambrosia/catalog-01.png"
+          data-pswp-width="1160"
+          data-pswp-height="967">
+          <img
+            data-src="../img/ambrosia/catalog-01.png"
+            class="lazyload"
+            alt="test" />
+            <noscript>
+              <img
+                src="../img/ambrosia/catalog-01.png"
+                alt="test"/>
+            </noscript>
+        </a>
+      </div>
+
+      <!-- PROJECT TEXT/DESCRIPTION -->
+      <div class="text desc">
+        <div class="info">
+          <p>
+            20XX-20XX<br>
+          </p>
+          <p>
+            what materials<br>did you<br>use?<br>list them here
+          </p>
+        </div>
+        <div class="divider mobile">☆☆☆</div>
+        <div class="summary">
+          <p>
+            this is a block of text describing the project. maybe a short sentence to start things off.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies lectus sem, ac mollis diam ultrices eget. Donec vitae justo in lectus mollis laoreet. Phasellus vel fermentum odio. Sed hendrerit sodales odio et rhoncus. Sed tortor lacus, maximus vel vestibulum vel, dictum feugiat massa. Donec posuere velit porta nisi gravida, quis mollis mi hendrerit.
+          </p>
+          <p>
+            this is what <a href="#">a text link</a> would look like.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGES / NO SLIDESHOW -->
+      <div class="gallery images photoswipe">
+        <!-- lAZYLOAD -->
+        <a
+          href="../img/assets/film1.jpg"
+          data-pswp-width="1360"
+          data-pswp-height="906">
+          <img
+            data-src="../img/assets/film1.jpg"
+            class="lazyload"
+            alt="test" />
+            <noscript>
+              <img
+                src="../img/assets/film1.jpg"
+                alt="test"/>
+            </noscript>
+        </a>
+
+        <!-- lAZYLOAD -->
+        <a
+          href="../img/assets/film1.jpg"
+          data-pswp-width="1360"
+          data-pswp-height="906">
+          <img
+            data-src="../img/assets/film1.jpg"
+            class="lazyload"
+            alt="test" />
+            <noscript>
+              <img
+                src="../img/assets/film1.jpg"
+                alt="test"/>
+            </noscript>
+        </a>
+
+
+        <!-- NO LAZYLOAD -->
+        <!-- <a
+          href="../img/assets/film1.jpg"
+          data-pswp-width="1360"
+          data-pswp-height="906">
+          <img
+            src="../img/assets/film1.jpg"
+            alt="test" />
+        </a> -->
+      </div>
+
+      <!-- VIDEO EXAMPLE -->
+      <div class="gallery video">
+        <video
+          preload="metadata"
+          controls playsinline>
+          <source src="../img/shadows2sound/s2s-01.mp4#t=0.1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- PROJECT TEXT/CAPTION + EXTRA DETAILS -->
+      <div class="text desc">
+        <!-- <div class="info">
+          <p>
+            photo by<br>
+            firstname lastname
+          </p>
+        </div>
+        <div class="divider mobile">☆☆☆</div> -->
+        <div class="caption">
+          <p>
+            potentially a way to include more content, or a short caption for a slideshow, section or image. some more text here and a longer sentence to use as an example. if including minor details and/or credits, use the 'summary' class instead.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGES / NO SLIDESHOW -->
+      <div class="gallery images photoswipe">
+        <a
+          href="../img/assets/asset_1-2.jpg"
+          data-pswp-width="3024"
+          data-pswp-height="4032">
+          <img
+            data-src="../img/assets/asset_1-2.jpg"
+            class="lazyload"
+            alt="test" />
+            <noscript>
+              <img
+                src="../img/assets/asset_1-2.jpg"
+                alt="test"/>
+            </noscript>
+        </a>
+      </div>
+
+
 
     </div>
 
-
     <!-- SCRIPTS -->
     <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="../js/slick.min.js"></script>
-    <script type="text/javascript" src="../js/masonry.pkgd.min.js" ></script>
     <script type="text/javascript" src="../js/lazysizes.min.js" async=""></script>
-    <script type="text/javascript" src="../js/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="../js/moment.js"></script>
+    <script type="text/javascript" src="../js/moment-timezone-with-data.js"></script>
+    <script type="text/javascript" src="../js/slick/slick.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"></script>
-
+    <script src="../js/photoswipe/photoswipe.umd.min.js"></script>
+    <script src="../js/photoswipe/photoswipe-lightbox.umd.min.js"></script>
 
   </body>
 
