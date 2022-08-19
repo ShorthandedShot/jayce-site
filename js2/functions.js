@@ -1,35 +1,3 @@
-// // https://codepen.io/afarrar/pen/JRaEjP
-// function showTime(){
-//     var date = new Date();
-//     var h = date.getHours(); // 0 - 23
-//     var m = date.getMinutes(); // 0 - 59
-//     var s = date.getSeconds(); // 0 - 59
-//     var ampm = "am";
-//
-//     if(h == 0){
-//         h = 12;
-//     }
-//
-//     if(h > 12){
-//         h = h - 12;
-//         ampm = "pm";
-//     }
-//
-//     h = (h < 10) ? "0" + h : h;
-//     m = (m < 10) ? "0" + m : m;
-//     s = (s < 10) ? "0" + s : s;
-//
-//     // var time = h + ":" + m + ":" + s + " " + ampm;
-//     var time = h + ":" + m + " " + ampm;
-//     document.getElementById("clock").innerText = time;
-//     document.getElementById("clock").textContent = time;
-//
-//     setTimeout(showTime, 1000);
-//
-// }
-//
-// showTime();
-
 function displayTime() {
     var time = moment().tz('America/New_York').format('HH:mm') + " " + "est";
     $('#clock').html(time);
@@ -38,4 +6,68 @@ function displayTime() {
 
 $(document).ready(function() {
     displayTime();
+
+    $slideshow = $('.slideshow').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 250,
+      // speed: 0,
+      cssEase: 'linear',
+      // fade: true,
+      // autoplay: true,
+      // autoplaySpeed: 2000,
+      // infinite: true,
+    });
+
+    // $('.slideshow').click(function() {
+    //   $slideshow.slick("slickNext");
+    // });
+
+    $(window).resize(function(){
+      $('.slideshow')[0].slick.refresh();
+    });
+
+    // var lightbox = new PhotoSwipeLightbox({
+    //   arrowPrevSVG: leftArrowSVGString,
+    //   arrowNextSVG: leftArrowSVGString,
+    //     gallery: '.test-gallery',
+    //     children: 'a',
+    //     // dynamic import is not supported in UMD version
+    //     pswpModule: PhotoSwipe
+    //     });
+    //   lightbox.init();
+
+    var leftArrowSVGString = '←';
+    var rightArrowSVGString = '→';
+
+    var options = {
+      arrowPrevSVG: leftArrowSVGString,
+      arrowNextSVG: rightArrowSVGString,
+      arrowPrev: false,
+      arrowNext: false,
+      arrowKeys: false,
+      counter: false,
+      zoom: false,
+      // close: false,
+      bgOpacity: 0.8,
+      bgClickAction: 'close',
+
+      mouseMovePan: true,
+
+      initialZoomLevel: 'fit',
+      secondaryZoomLevel: 1.5,
+      maxZoomLevel: 1,
+
+      // // to apply styles just to this instance of PhotoSwipe
+      // mainClass: 'pswp--custom-icon-colors',
+
+      gallery: '.photoswipe',
+      children: 'a',
+      pswpModule: PhotoSwipe
+    }
+
+    var lightbox = new PhotoSwipeLightbox(options);
+    lightbox.init();
+
+
 });

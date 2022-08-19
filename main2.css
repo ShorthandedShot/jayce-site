@@ -16,7 +16,7 @@ html, body {
   font-family: sans-serif;
   color: white;
   margin: 0 auto;
-  overflow: overlay;
+  /* overflow: overlay; */
   height: 100%;
 }
 
@@ -106,7 +106,7 @@ hr {
 .contact_bg::-webkit-scrollbar-thumb {
   /* background: white; */
   border: 1px solid white;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 /* TESTESTSTSTST */
@@ -145,14 +145,14 @@ hr {
 .header {
   width: 100vw;
   height:4em;
-  padding: 1em 1.3em !important;
+  padding: 1em 1.8em !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 250%);
-  z-index: 9999999999999999999999;
+  z-index: 9999;
 }
 
 
@@ -296,12 +296,14 @@ CONTACT PAGE
   line-height: 1.4em;
 }
 
-.about a{
+.about a,
+.page .desc a{
   transition: all 0.15s ease-out;
   /* text-transform: uppercase; */
 }
 
-.about a:hover {
+.about a:hover,
+.page .desc a:hover {
   border: 1px solid white;
   text-decoration: none;
   border-radius: 100px;
@@ -322,9 +324,11 @@ WORKS PAGE
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5em;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   /* margin: 0 auto; */
   /* transition: all 0.5s ease-in-out; */
+  /* border: 1px solid white; */
+  overflow: hidden;
 }
 
 .work .proj {
@@ -384,6 +388,120 @@ WORKS PAGE
   margin-left: 8px;
   margin-top: 3px;
 }
+
+/*
+*
+PAGES - INDIVIDUAL
+*
+*/
+.page {
+  width: 100%;
+  height: fit-content;
+  padding: 5em 2em 4em 2em;
+}
+
+/* PAGE - TEXT PORTION */
+.page .text,
+.page .gallery {
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+}
+
+.page .title,
+.page .divider {
+  height: fit-content;
+  text-align: center;
+}
+
+.page .title h1 {
+  margin: 0 0 5px 0;
+  line-height: 1em;
+}
+.page .title p {
+  margin: 0;
+}
+
+.page .desc {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0 auto;
+}
+
+.page .desc .summary {
+ max-width: 900px;
+}
+.page .desc .info {
+  min-width: 150px;
+}
+
+.page .desc :first-child {
+  margin-top: 0;
+}
+
+.page .desc :last-child {
+  margin-bottom: 0;
+}
+
+/* PAGE - IMAGE PORTION */
+
+/* PAGES - SLIDESHOW */
+.page .slideshow {
+  margin: 0 auto;
+  max-width: 750px;
+  /* border: 1px solid white; */
+}
+
+.page .slideshow img {
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.page .slideshow a {
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+/* PAGES - VIDEO + IMAGES*/
+.page .video,
+.page .images {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  /* border: 1px solid white; */
+}
+
+.page .images {
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.page .images a {
+  text-decoration: none;
+  margin: 0 auto;
+  display: flex;
+}
+
+.page .images img {
+  object-fit: contain;
+  margin: 0;
+}
+
+/* .pswp__img--placeholder--blank{     display: none !important; }
+
+.pswp img {
+    max-width: none;
+    object-fit: contain;
+} */
+
+.mobile {
+  display: none;
+}
+
+
 
 /* RESPONSIVENESS RESPONSIVENESS RESPONSIVENESS */
 
@@ -459,9 +577,22 @@ WORKS PAGE
   .work {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* PAGES - INDIVIDUAL */
+  .page .desc {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 420px) {
+  .mobile {
+    display: block;
+  }
+
+  /* HEADER */
+  .header {
+    padding: 1em 1.3em !important;
+  }
   /* LANDING PAGE */
   .landing .name {
     font-size: 4.5rem;
@@ -476,18 +607,34 @@ WORKS PAGE
   .about {
     /* word-spacing: 0.1em; */
     text-align: center;
+    margin-bottom: auto !important;
   }
   .about .intro {
     font-size: 1.5rem;
     line-height: 1.4em;
   }
-  .about .name {
+  .about .name,
+  .page .title h1 {
     font-size: 2rem;
   }
 
   /* WORKS PAGE */
-  .works {
+  .work {
     padding: 7em .5em 4em .5em;
+  }
+
+  /* PAGEs - INDIVIDUAL */
+  .page {
+    padding: 5em 1em 4em 1em;
+  }
+
+  .page .text,
+  .divider {
+    text-align: left !important;
+  }
+
+  .page .desc {
+    flex-direction: column;
   }
 }
 
