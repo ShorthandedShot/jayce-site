@@ -31,6 +31,13 @@
     <script type="text/javascript" src="js/moment.js"></script>
     <script type="text/javascript" src="js/moment-timezone-with-data.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
+    <script>
+    function displayTime() {
+        var time = moment().tz('America/New_York').format('HH:mm') + " " + "est";
+        $('#clock').html(time);
+        setTimeout(displayTime, 1000);
+    }
+    </script>
 
   </body>
 
