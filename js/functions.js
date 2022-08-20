@@ -4,10 +4,8 @@ function displayTime() {
     setTimeout(displayTime, 1000);
 }
 
-displayTime();
-
 $(document).ready(function() {
-    // displayTime();
+    displayTime();
 
     $slideshow = $('.slideshow').slick({
       slidesToShow: 1,
