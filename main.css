@@ -200,7 +200,8 @@ LANDING PAGE
 }
 
 .header a,
-.landing .menu a {
+.landing .menu a,
+.big_link a{
   text-decoration: none;
   transition: all 0.25s linear;
   border: 1px solid transparent !important;
@@ -210,7 +211,8 @@ LANDING PAGE
 }
 
 .header a:hover,
-.landing .menu a:hover {
+.landing .menu a:hover,
+.big_link a:hover {
   border: 1px solid white !important;
   border-radius: 100%;
   padding: .5em .8em;
@@ -305,13 +307,13 @@ CONTACT PAGE
 }
 
 .about a:hover,
-.page .desc a:hover {
+.page .info a:hover,
+.page .summary a:hover {
   border: 1px solid white;
   text-decoration: none;
   border-radius: 100px;
   padding: 2px 15px;
 }
-
 /*
 *
 *
@@ -431,7 +433,7 @@ PAGES - INDIVIDUAL
 }
 
 .page .desc .summary {
- max-width: 900px;
+ max-width: 1000px;
 }
 .page .desc .info {
   min-width: 150px;
@@ -640,12 +642,13 @@ PAGES - INDIVIDUAL
     content: "☆ ";
   }
 
+
   .page .desc {
     flex-direction: column;
   }
 
-  .page .info {
-    /* text-align: center !important; */
+  .page .big_link {
+    text-align: center !important;
   }
 }
 
