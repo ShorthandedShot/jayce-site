@@ -454,7 +454,7 @@ PAGES - INDIVIDUAL
 /* PAGES - SLIDESHOW */
 .page .slideshow {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 830px;
 }
 
 .page .slideshow img {
@@ -475,7 +475,7 @@ PAGES - INDIVIDUAL
 .page .images {
   display: flex;
   margin: 0 auto;
-  max-width: 620px;
+  max-width: 700px;
 }
 
 .page .images {
@@ -484,7 +484,7 @@ PAGES - INDIVIDUAL
   gap: 2em;
 }
 
-.page .images + .row {
+.page .row {
   flex-direction: row !important;
 }
 
@@ -632,10 +632,14 @@ PAGES - INDIVIDUAL
     padding: 7em .5em 4em .5em;
   }
 
-  /* PAGEs - INDIVIDUAL */
+  /* PAGES - INDIVIDUAL */
   .page {
     padding: 5em 1em 4em 1em;
   }
+
+  /* .page .images + .row {
+    flex-direction: column !important;
+  } */
 
   .page .text,
   .divider {
