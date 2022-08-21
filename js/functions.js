@@ -43,7 +43,7 @@ $(document).ready(function() {
       arrowNextSVG: rightArrowSVGString,
       arrowPrev: false,
       arrowNext: false,
-      arrowKeys: false,
+      // arrowKeys: false,
       counter: false,
       zoom: false,
       // close: false,
