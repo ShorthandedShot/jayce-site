@@ -49,7 +49,7 @@ $(document).ready(function() {
       // close: false,
       bgOpacity: 0.8,
       bgClickAction: 'close',
-      padding: { top: 40, bottom: 40, left: 80, right: 80 },
+      padding: { top: 25, bottom: 25, left: 50, right: 50 },
 
       mouseMovePan: true,
 

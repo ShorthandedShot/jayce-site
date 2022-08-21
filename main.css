@@ -78,8 +78,8 @@ ul {
     /* margin-left: -3em; */
     /* list-style-position: inside; */
     /* text-indent: 3rem;  */
-    text-indent: -1rem;
-    margin-left: -2rem;
+    text-indent: -1.8rem;
+    margin-left: -1rem;
 }
 
 li:before {
@@ -637,9 +637,10 @@ PAGES - INDIVIDUAL
     padding: 5em 1em 4em 1em;
   }
 
-  /* .page .images + .row {
-    flex-direction: column !important;
-  } */
+  .page .row {
+    /* flex-direction: column !important; */
+    column-gap: 1em !important;
+  }
 
   .page .text,
   .divider {
