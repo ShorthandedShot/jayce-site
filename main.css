@@ -484,6 +484,10 @@ PAGES - INDIVIDUAL
   gap: 2em;
 }
 
+.page .images + .row {
+  flex-direction: row !important;
+}
+
 .page .images a {
   display: flex;
   margin: 0 auto;
