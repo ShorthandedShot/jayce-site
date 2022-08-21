@@ -604,6 +604,14 @@ PAGES - INDIVIDUAL
     display: none;
   }
 
+  /* TRANSITIONS - BLUR */
+  .landing .menu:hover ~ .name_container .name,
+  .header:hover ~ .contact_bg .about,
+  .header:hover ~ .work,
+  .header:hover ~ .page {
+      filter: blur(0px) !important;
+  }
+
   /* HEADER */
   .header {
     padding: 1em 1.3em !important;
