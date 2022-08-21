@@ -37,10 +37,12 @@ $(document).ready(function() {
 
     var leftArrowSVGString = '←';
     var rightArrowSVGString = '→';
+    var closeSVGString = 'X';
 
     var options = {
       arrowPrevSVG: leftArrowSVGString,
       arrowNextSVG: rightArrowSVGString,
+      closeSVG: closeSVGString,
       arrowPrev: false,
       arrowNext: false,
       // arrowKeys: false,

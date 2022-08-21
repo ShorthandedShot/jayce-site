@@ -18,6 +18,7 @@ html, body {
   margin: 0 auto;
   /* overflow: overlay; */
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /* IDK WHAT 2 CALL THIS.. BUT Y'KNOW */
@@ -352,7 +353,8 @@ WORKS PAGE
   max-width: 300px;
 }
 
-.work .image img {
+.work .image img,
+.work .image video {
   height: 100%;
   width: auto !important;
   /* width: 100%; */
@@ -409,10 +411,13 @@ PAGES - INDIVIDUAL
 .page .gallery {
   margin-top: 2em !important;
   margin-bottom: 2em !important;
+  display: flex;
+  justify-content: center;
 }
 
 .page .title,
 .page .divider {
+  flex-direction: column;
   height: fit-content;
   text-align: center;
 }
@@ -494,9 +499,10 @@ PAGES - INDIVIDUAL
   text-decoration: none;
 }
 
-.page .images img {
+.page .images img,
+.page video {
   object-fit: contain;
-  max-height: 600px;
+  max-height: 600px !important;
 }
 
 

@@ -15,7 +15,7 @@
 
   --pswp-icon-color: #fff;
   --pswp-icon-color-secondary: #4f4f4f;
-  --pswp-icon-stroke-color: #4f4f4f;
+  --pswp-icon-stroke-color: #000;
   --pswp-icon-stroke-width: 2px;
 
   --pswp-error-text-color: var(--pswp-icon-color);
@@ -292,6 +292,11 @@ div.pswp__img--placeholder,
 */
 .pswp__button--close {
   margin-right: 6px;
+  margin-top: 10px;
+  /* width: 100px; */
+  /* height:100px; */
+  color: white;
+  font-size: 2rem;
 }
 
 
