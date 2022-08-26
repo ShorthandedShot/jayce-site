@@ -158,6 +158,11 @@ hr {
   z-index: 9999;
 }
 
+.header .link {
+  width: 150px;
+  max-width: 150px;
+}
+
 
 
 
