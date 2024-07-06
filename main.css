@@ -440,13 +440,16 @@ PAGES - INDIVIDUAL
   justify-content: center;
   gap: 2em;
   margin: 0 auto;
+  width: 100%;
 }
 
 .page .desc .summary {
  max-width: 1000px;
+ width: 100%;
 }
 .page .desc .info {
   min-width: 150px;
+  width: 250px;
 }
 .page .desc .caption {
   max-width: 1050px;
