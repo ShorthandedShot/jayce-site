@@ -489,16 +489,18 @@ PAGES - INDIVIDUAL
   display: flex;
   margin: 0 auto;
   max-width: 700px;
+  align-items: center;
 }
 
 .page .images {
   flex-direction: column;
-  align-items: center;
   gap: 2em;
 }
 
 .page .row {
   flex-direction: row !important;
+  max-width: 830px !important;
+  gap: 2em;
 }
 
 .page .images a {
@@ -508,9 +510,13 @@ PAGES - INDIVIDUAL
 }
 
 .page .images img,
-.page video {
+.page .video video {
   object-fit: contain;
   max-height: 600px !important;
+}
+
+.page .row.video video {
+  max-width: 300px;
 }
 
 
