@@ -517,6 +517,7 @@ PAGES - INDIVIDUAL
 
 .page .row.video video {
   max-width: 300px;
+  max-height: 200px;
 }
 
 
@@ -606,6 +607,10 @@ PAGES - INDIVIDUAL
   /* PAGES - INDIVIDUAL */
   .page .desc {
     width: 100%;
+  }
+
+  .page .row.video {
+    flex-direction: column !important;
   }
 }
 
